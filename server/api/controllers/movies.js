@@ -137,5 +137,15 @@ exports.getThrillerMovies = async function (req,res,next)  {
     })
 }
 
+exports.getTop = async function (req,res,next)  {
+    
+    
+    fetch("https://api.themoviedb.org/3/discover/movie?page=1&with_networks=213&api_key="+process.env.API_KEY)
+    .then(res=>res.json())
+    .then(data=>{
+        res.status(200).json(data);
+        console.log(data);
+    })
+}
 
 

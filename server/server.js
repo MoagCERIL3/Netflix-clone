@@ -19,7 +19,11 @@ db.once('open', ()=> console.log("Connected to Database ..."))
 
 // middlewares
 app.use(express.json());
-
+app.use((req,res,next)=>{
+    res.setHeader("Access-Control-Allow-Origin","*");
+    res.setHeader("Access-Control-Allow-Headers","*");
+    next();
+})
 //routes
 app.use('/browse', moviesRouter);
 

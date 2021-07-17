@@ -3,7 +3,7 @@ const  router = express.Router()
 const moviesController = require('../../controllers/movies')
 
 router.get('/',moviesController.getAll);
-
+router.get('/top',moviesController.getTop)
 router.get('/trending/movie/week',moviesController.getTrendingMovies);
 router.get('/movie/topRated/',moviesController.getTopRated);
 router.get('/movie/netflixOriginals',moviesController.getNetflixOriginals);
