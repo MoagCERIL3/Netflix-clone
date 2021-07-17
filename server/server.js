@@ -21,6 +21,7 @@ db.once('open', ()=> console.log("Connected to Database ..."))
 app.use(express.json());
 
 //routes
+app.use('/browse', moviesRouter);
 
 
 
