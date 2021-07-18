@@ -20,7 +20,7 @@ exports.getTrendingMovies = async function (req,res,next)  {
     .then(res=>res.json())
     .then(data=>{
         res.status(200).json(data);
-        console.log(data);
+        
     })
 }
 
@@ -31,7 +31,7 @@ exports.getTopRated = async function (req,res,next)  {
     .then(res=>res.json())
     .then(data=>{
         res.status(200).json(data);
-        console.log(data);
+        
     })
 }
 
@@ -42,7 +42,7 @@ exports.getNetflixOriginals = async function (req,res,next)  {
     .then(res=>res.json())
     .then(data=>{
         res.status(200).json(data);
-        console.log(data);
+        
     })
 }
 
@@ -55,7 +55,7 @@ exports.getActionMovies = async function (req,res,next)  {
     .then(res=>res.json())
     .then(data=>{
         res.status(200).json(data);
-        console.log(data);
+        
     })
 }
 
@@ -66,7 +66,7 @@ exports.getComedyMovies = async function (req,res,next)  {
     .then(res=>res.json())
     .then(data=>{
         res.status(200).json(data);
-        console.log(data);
+        $
     })
 }
 
@@ -78,7 +78,6 @@ exports.getHorrorMovies = async function (req,res,next)  {
     .then(res=>res.json())
     .then(data=>{
         res.status(200).json(data);
-        console.log(data);
     })
 }
 
@@ -89,7 +88,6 @@ exports.getAdventureMovies = async function (req,res,next)  {
     .then(res=>res.json())
     .then(data=>{
         res.status(200).json(data);
-        console.log(data);
     })
 }
 
@@ -100,7 +98,6 @@ exports.getDramaMovies = async function (req,res,next)  {
     .then(res=>res.json())
     .then(data=>{
         res.status(200).json(data);
-        console.log(data);
     })
 }
 
@@ -111,7 +108,6 @@ exports.getFamiltyMovies = async function (req,res,next)  {
     .then(res=>res.json())
     .then(data=>{
         res.status(200).json(data);
-        console.log(data);
     })
 }
 
@@ -122,7 +118,6 @@ exports.getHistoryMovies = async function (req,res,next)  {
     .then(res=>res.json())
     .then(data=>{
         res.status(200).json(data);
-        console.log(data);
     })
 }
 
@@ -133,7 +128,6 @@ exports.getThrillerMovies = async function (req,res,next)  {
     .then(res=>res.json())
     .then(data=>{
         res.status(200).json(data);
-        console.log(data);
     })
 }
 
@@ -144,7 +138,6 @@ exports.getTop = async function (req,res,next)  {
     .then(res=>res.json())
     .then(data=>{
         res.status(200).json(data);
-        console.log(data);
     })
 }
 
