@@ -92,10 +92,5 @@ export const AddToListButton = styled.button`
 
 export const Fade = styled.div`
     height : 7.4rem;
-    background : linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0.35),
-        rgba(0, 0, 0, 0.1),
-        rgba(0, 0, 0, 0.35))
-    );
+    background : linear-gradient(to bottom,rgba(0, 0, 0, 0.35),rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.35)));
 `;

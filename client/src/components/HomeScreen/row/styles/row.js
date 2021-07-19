@@ -24,6 +24,8 @@ export const Title = styled.h2`
     line-height: 1.25vw;
     font-size: 1.4vw;
     margin-left : 20px;
+    margin-top : 20px;
+    
     
 `;
 
@@ -32,6 +34,7 @@ export const Poster = styled.img`
     object-fit : contain;
     margin-right : 10px;
     width : 100%;
+    border-radius: 5px;
     transition : transform 450ms;
 
     &:hover{
@@ -45,6 +48,7 @@ export const LargePoster = styled.img`
     object-fit : contain;
     margin-right : 10px;
     width : 100%;
+    border-radius: 10px;
     transition : transform 450ms;
 
     &:hover{
