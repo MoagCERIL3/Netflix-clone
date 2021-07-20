@@ -1,5 +1,4 @@
 import React from 'react';
-import { Counter } from './features/counter/Counter';
 import './App.css';
 import HomeScreen from './components/HomeScreen';
 import Login from './components/login'
@@ -16,14 +15,12 @@ function App() {
 
       <Router>
         <Switch>
-          
-          
-
+         
           <Route path="/browse" >
             <HomeScreen/>
           </Route>
 
-          <Route path="/signin" >
+          <Route path="/signup" >
             <SignUp/>
           </Route>
 

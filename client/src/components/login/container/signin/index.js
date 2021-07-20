@@ -11,7 +11,7 @@ const SignIn = () => {
                 <CardButton>Sign In</CardButton>
                 <CardSubtitle>
                     New to Netflix ?
-                    <SignUpLink>Sign Up Now</SignUpLink>
+                    <SignUpLink href="/signup" >Sign Up Now</SignUpLink>
                 </CardSubtitle>
                 
             </SignInForm>
