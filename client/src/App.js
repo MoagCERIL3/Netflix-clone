@@ -6,20 +6,29 @@ import Login from './components/login'
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
+import SignUp from './components/signup';
 
 function App() {
   return (
     <div className="App">
+
       <Router>
         <Switch>
-          <Route path="/" >
-            <Login/>
-          </Route>
+          
+          
+
           <Route path="/browse" >
             <HomeScreen/>
+          </Route>
+
+          <Route path="/signin" >
+            <SignUp/>
+          </Route>
+
+          <Route path="/" >
+            <Login/>
           </Route>
          
         </Switch>

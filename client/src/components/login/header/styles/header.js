@@ -5,7 +5,7 @@ export const HeaderContainer = styled.div`
     top : 0;
     width : 100%;
     height: 60px;
-    background-color: transparent };
+    background-color: transparent ;
 `;
 export const HeaderLogo = styled.img`
     position:fixed;
@@ -24,8 +24,10 @@ export const HeaderButton = styled.button`
     font-weight: 550;
     font-size: 1rem;
     color: #fff;
-    border-radius: 3px;
+    border-radius: 15px;
     border : none;
     cursor : pointer;
+
+    
 
 `;
