@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const authController = require('../../controllers/auth');
 const passport = require('passport');
+const {validator, signUpValidationRules} = require('../../middlewares/validator');
 
 
 
@@ -15,7 +16,7 @@ router.get('/signin',(req, res) => {
   res.render('login.ejs')
 });
 
-router.post('/signup',authController.signUp);
+router.post('/signup',signUpValidationRules(),validator,authController.signUp);
 router.post('/signin',passport.authenticate('local',{ successRedirect: '/',failureRedirect: '/signin'}));
 router.get('/signout',authController.signOut);
 router.get('/me',authController.getCurrent);
