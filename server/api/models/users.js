@@ -49,11 +49,13 @@ const usersSchema = new Schema({
 
 });
 
-usersSchema.statics.usernameExists = async username => {
+usersSchema.statics.usernameExists = async function(username) {
     
-    const user = await model('users').findOne({ username });
-  
-    return !!user;
+    const user = await mongoose.model('users').findOne({ username });
+
+    if(user) return true;
+    
+    return false;
   };
 
 usersSchema.statics.isValidPassword = async function(password,userPassword) {
