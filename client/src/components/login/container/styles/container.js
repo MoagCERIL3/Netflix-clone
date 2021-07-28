@@ -20,12 +20,13 @@ export const Gradient = styled.div`
 export const Card = styled.div`
     position: absolute;
     width: 100%;
-    padding: 75px 0;
-    max-width: 950px;
+    padding: 75px 30px;
     margin: 0 auto;
+    display : flex;
+    flex-direction: column;
     text-align: center;
     z-index: 1;
-    top : 20%;
+    top : 30%;
     
     color : white;
     
@@ -38,26 +39,36 @@ export const CardTitle = styled.h1`
 `;
 
 export const CardSubtitle = styled.h2`
-    font-size: 2rem;
-    font-weight: 400;
-    margin-bottom: 30px;
+    
+    color: white;
+    font-size: 26px;
+    font-weight: normal;
+    margin: 16px auto
 
 `;
 export const CardInput = styled.div`
-
-
    
     
 `;
 
-export const CardForm = styled.form``;
+export const CardForm = styled.div`
+    
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 100%;
+    margin-top: 20px;
+    flex-wrap: wrap;
+   
+`;
 export const FormInput = styled.input`
     outline-width: 0;
-    padding: 10px;
-    height: 45px;
-    width: 30%;
     border: none;
-    max-width: 600px;
+    max-width: 450px;
+    width: 100%;
+    border: 0px;
+    padding: 10px;
+    height: 30px;
 
 `;
 export const FormButton = styled.button`
@@ -69,6 +80,13 @@ export const FormButton = styled.button`
     cursor: pointer;
     border-top-left-radius: 0;
     border-left: 1px solid #333;
-    font-size: 1.625rem;
-    min-height: 47px;
+    font-size: 1rem;
+    min-height: 30px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+`;
+
+export const FormLink = styled.a`
+    text-decoration: none;
 `;
