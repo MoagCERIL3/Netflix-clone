@@ -14,6 +14,8 @@ export const Container = styled.div`
 export const ContainerHeader = styled.div`
     margin-bottom : 10px;
 `;
+
+
 export const FormContainer = styled.form`
     margin : 0 auto;
     text-align: left;
@@ -27,13 +29,85 @@ export const StepTitle = styled.h1`
     font-weight: 600;
     display: inline-block;
     
+    
 `;
+
+
 export const Subtitle = styled.h3`
 
     margin-top: 10px;
     font-size : 18px; 
     font-weight: 500;
     color : #333333;
+
+`;
+
+export const ContainerErrorHeader = styled.div`
+    margin-bottom : 10px;
+    color: white;
+    background-color: #e50914;
+    border-radius : 40px;
+    padding : 10px;
+    
+    min-height : 150px;
+
+
+    .MuiSvgIcon-root {
+        padding: 5px ;
+    }
+`;
+export const ContainerSuccessHeader = styled.div`
+    margin-bottom : 10px;
+    color: #e50914;
+    background-color: #fffdfc;
+    border-radius : 40px;
+    padding : 10px;
+    display:flex;
+    justify-content : center;
+    min-height : 150px;
+
+
+    .MuiSvgIcon-root {
+        padding: 5px ;
+    }
+`;
+
+export const ErrorTitle = styled.div`
+    
+    color : white;
+    width : 100%;
+    
+`;
+
+export const SuccessTitle = styled.div`
+    
+    color : #e50914;
+    width : 100%;
+    
+`;
+
+export const SuccessSpan = styled.span`
+    color : #e50914;
+    font-size: 40px;
+    font-weight: 600;
+   
+`;
+export const ErrorSpan = styled.span`
+    color : white;
+    font-size: 28px;
+    font-weight: 500;
+   
+`;
+
+
+export const ErrorMessage = styled.h3`
+
+    margin-top: 20px;
+    font-size : 18px; 
+    font-weight: 450;
+    color : white;
+    padding-left : 10px; 
+   
 
 `;
 export const EmailContainer = styled.div`
@@ -120,6 +194,10 @@ export const NextButton = styled.button`
     border-radius: 30px;
     font-size: 1rem;
     padding: 16px 20px;
+`;
+
+export const LoginLink = styled.a`
+    text-decoration: none;
 `;
 
 

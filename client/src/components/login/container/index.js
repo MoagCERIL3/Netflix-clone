@@ -14,7 +14,7 @@ const Container = () => {
     const btnOnClick = (e) => {
 
         dispatch(initialSignup({
-            email: email 
+            email: email.current.value
         }));
 
     }
