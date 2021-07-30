@@ -16,7 +16,6 @@ router.get('/signin',(req, res) => {
 });
 
 router.post('/signup',signUpValidationRules(),validator,authController.signUp);
-//router.post('/signin',passport.authenticate('local'),authController.signIn);
 router.post('/signin',authController.signIn);
 router.get('/signout',authController.signOut);
 router.get('/me',authController.getCurrent);
