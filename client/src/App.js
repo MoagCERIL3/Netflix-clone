@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import HomeScreen from './components/HomeScreen';
 import Login from './components/login'
+import Browse from './components/browse'
 import {
   BrowserRouter as Router,
   Switch,
@@ -16,8 +17,12 @@ function App() {
       <Router>
         <Switch>
          
-          <Route path="/browse" >
+          <Route path="/home" >
             <HomeScreen/>
+          </Route>
+
+          <Route path="/browse" >
+            <Browse/>
           </Route>
 
           <Route path="/signup" >
