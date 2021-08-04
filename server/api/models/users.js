@@ -41,6 +41,66 @@ const usersSchema = new Schema({
         type: [String]
     },
 
+    SecondAccountUsername:{
+        type : String
+    },
+
+    SecondAccountAvatar:{
+        type : String
+    },
+
+    SecondAccountWatchList:{
+        type: [String]
+    },
+
+    SecondAccountLikes:{
+        type: [String]
+    },
+
+    SecondAccountdisLikes:{
+        type: [String]
+    },
+
+    ThirdAccountUsername:{
+        type : String
+    },
+
+    ThirdAccountAvatar:{
+        type : String
+    },
+
+    ThirdAccountWatchList:{
+        type: [String]
+    },
+
+    ThirdAccountLikes:{
+        type: [String]
+    },
+
+    ThirdAccountdisLikes:{
+        type: [String]
+    },
+
+    ThirdAccountUsername:{
+        type : String
+    },
+
+    FourthAccountAvatar:{
+        type : String
+    },
+
+    FourthAccountWatchList:{
+        type: [String]
+    },
+
+    FourthAccountLikes:{
+        type: [String]
+    },
+
+    FourthAccountdisLikes:{
+        type: [String]
+    },
+
     createdAt : {
         type: Date,
         default: Date.now,
