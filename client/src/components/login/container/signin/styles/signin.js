@@ -17,6 +17,42 @@ export const SignInCard = styled.div`
 
 `;
 
+export const ErrorCard = styled.div`
+    display: grid;
+    flex-direction: column;
+    padding : 10px;
+    border-radius: 5px;
+    color : #fff;
+    
+`;
+
+export const ErrorCardTitle = styled.div`
+    
+    margin-bottom: 3vh;
+    background-image: linear-gradient( rgba(255,0,0,0), rgba(255,0,0,1));
+    border-radius : 15px;
+
+    .MuiSvgIcon-root {
+        padding-right:  10px;
+        padding-top: 5px;
+    }
+`;
+
+export const ErrorCardSpan = styled.h1`
+
+    color: #fff;
+    font-size : 24px; 
+    font-weight: 500;
+  
+`;
+
+export const ErrorMessage = styled.h3`
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 450;
+    padding-bottom : 1vh;
+`;
+
 export const SignInForm = styled.form`
     display: grid;
     flex-direction: column;

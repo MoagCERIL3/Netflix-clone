@@ -26,6 +26,7 @@ import { Container,
 import axios from '../../axios/axios' 
 import { showCard } from '../../features/counter/navigationSlice';
 import {useDispatch} from 'react-redux'
+import { useHistory } from 'react-router-dom';
 
 
 const SignUp = () => {
@@ -41,6 +42,7 @@ const SignUp = () => {
     const[PasswordError,setPasswordError] = useState(false);
 
     const dispatch = useDispatch();
+    const router = useHistory();
     
     const submit =(e)=>{
         e.preventDefault();
@@ -85,7 +87,7 @@ const SignUp = () => {
     const login =(e)=>{
         e.preventDefault();
         dispatch(showCard(true));
-        window.location.href='/';
+        router.push('/');
     }
 
     let formContainer;
