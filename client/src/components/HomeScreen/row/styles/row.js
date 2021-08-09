@@ -28,13 +28,28 @@ export const Title = styled.h2`
     
     
 `;
-
-export const Poster = styled.img`
+export const Poster = styled.div`
     max-height: 100px;
     object-fit : contain;
     margin-right : 10px;
     width : 100%;
     border-radius: 5px;
+    cursor : pointer;
+    transition : transform 450ms;
+
+    &:hover{
+        transform: scale(1.15);
+        opacity : 1;
+    }
+`;
+
+export const Image = styled.img`
+    max-height: 100px;
+    object-fit : contain;
+    margin-right : 10px;
+    width : 100%;
+    border-radius: 5px;
+    cursor : pointer;
     transition : transform 450ms;
 
     &:hover{
@@ -49,10 +64,19 @@ export const LargePoster = styled.img`
     margin-right : 10px;
     width : 100%;
     border-radius: 10px;
+    cursor : pointer;
     transition : transform 450ms;
 
     &:hover{
         transform: scale(1.20);
         opacity : 1;
     }
+`;
+
+export const ModalWrapper = styled.div`
+    display : none;    
+`;
+
+export const ModalTitle = styled.span`
+    color : white;
 `;

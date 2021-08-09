@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  
+
   newUser: {
     email : null
   },
@@ -27,7 +27,13 @@ export const userSlice = createSlice({
 
     signout:(state)=>{
       state.currentUser = null;
+    },
+
+    selectProfil:(state,action)=>{
+      state.selectedProfile = action.payload;
     }
+
+    
    
 
 
@@ -42,7 +48,7 @@ export const { initialSignup, signin, signout } = userSlice.actions;
 // in the slice file. For example: `useSelector((state: RootState) => state.counter.value)`
 export const selectNewUser = (state) => state.user.newUser.email;
 export const currentUser = (state) => state.user.currentUser;
-
+export const selectedProfile = (state)=> state.user.selectedProfile;
 
 
 export default userSlice.reducer;

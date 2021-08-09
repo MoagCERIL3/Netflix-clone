@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Header = styled.header`
-    height : 450px;
+    
     color : white;
     object-fit : contain;
     background-size : cover;
@@ -21,6 +21,22 @@ export const Container = styled.div`
 
     @media (max-width: 1000px) {
         margin: 0 30px;
+    }
+
+    .MuiPaper-root{
+        display : inline-block;
+        box-shadow: 0 0.6vw 1vw -0.4vw rgb(0 0 0 / 35%);
+        background-color: rgba(97, 97, 97);
+        color: white;
+        border-width: 0;
+        outline: none;
+        padding: 0.5rem 1rem;
+        border-radius: 0.4vw;
+        font-weight: 500;
+        font-size: 14px;
+        margin: 0.5rem 1rem;
+        cursor: pointer;
+        
     }
     
 `;
@@ -49,19 +65,17 @@ export const Buttons = styled.div`
 `;
 export const PlayButton = styled.button`
     box-shadow: 0 0.6vw 1vw -0.4vw rgba(0, 0, 0, 0.35);
-    background-color: rgba(51, 51, 51, 0.5);
-    color: white;
+    background-color: #ffff;
+    color: black;
     border-width: 0;
     outline : none;
     padding: 0.5rem 2rem;
     border-radius: 0.2vw;
-    max-width: 100px;
     font-weight: 700;
     font-size: 20px;
     margin: 0.5rem  1rem;
     cursor: pointer;
     left:0;
-    
     transition: background-color 0.5s ease;
 
     &:hover {
@@ -69,7 +83,8 @@ export const PlayButton = styled.button`
         color: white;
     }
   `;
-export const AddToListButton = styled.button`
+
+  export const DetailsButton = styled.button`
     box-shadow: 0 0.6vw 1vw -0.4vw rgba(0, 0, 0, 0.35);
     background-color: rgba(51, 51, 51, 0.5);
     color: white;
@@ -90,7 +105,33 @@ export const AddToListButton = styled.button`
     }
 `;
 
+export const AddToListButton = styled.button`
+    box-shadow: 0 0.6vw 1vw -0.4vw rgba(0, 0, 0, 0.35);
+    background-color: rgba(51, 51, 51, 0.5);
+    color: white;
+    border-width: 0;
+    outline : none;
+    padding: 0.5rem 2rem;
+    border-radius: 0.2vw;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0.5rem  1rem;
+    cursor: pointer;
+    
+    transition: background-color 0.5s ease;
+
+    &:hover {
+        background-color: #ffff;
+        color: black;
+    }
+`;
+
 export const Fade = styled.div`
     height : 7.4rem;
-    background : linear-gradient(to bottom,rgba(0, 0, 0, 0.35),rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.35)));
+    background : linear-gradient(180deg,transparent,rgba(37, 37, 37, 0.61),#111);
 `;
+
+export const PaperContainer = styled.div`
+    
+`;
+
