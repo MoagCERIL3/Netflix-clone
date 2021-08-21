@@ -16,7 +16,7 @@ exports.getAll = (req,res,next) =>{
 exports.getTrendingMovies = async function (req,res,next)  {
     
     
-    fetch("https://api.themoviedb.org/3/trending/all/week?api_key="+process.env.API_KEY)
+    fetch("https://api.themoviedb.org/3/trending/movie/week?api_key="+process.env.API_KEY)
     .then(res=>res.json())
     .then(data=>{
         res.status(200).json(data);
@@ -62,11 +62,11 @@ exports.getActionMovies = async function (req,res,next)  {
 exports.getComedyMovies = async function (req,res,next)  {
     
     
-    fetch("https://api.themoviedb.org/3/discover/movie?page=1&with_genres=25&api_key="+process.env.API_KEY)
+    fetch("https://api.themoviedb.org/3/discover/movie?page=1&with_genres=35&api_key="+process.env.API_KEY)
     .then(res=>res.json())
     .then(data=>{
         res.status(200).json(data);
-        $
+        
     })
 }
 

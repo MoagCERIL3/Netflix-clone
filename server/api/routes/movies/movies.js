@@ -1,6 +1,7 @@
 const express = require('express')
 const  router = express.Router()
 const moviesController = require('../../controllers/movies')
+const genresController = require('../../controllers/genres')
 
 router.get('/',moviesController.getAll);
 router.get('/top',moviesController.getTop)
@@ -14,5 +15,7 @@ router.get('/movie/drama',moviesController.getDramaMovies);
 router.get('/movie/family',moviesController.getFamiltyMovies);
 router.get('/movie/history',moviesController.getHistoryMovies);
 router.get('/movie/thriller',moviesController.getThrillerMovies);
+
+router.get('/movie/genre',genresController.getGenres);
 
 module.exports = router

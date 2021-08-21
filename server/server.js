@@ -2,6 +2,7 @@ require('dotenv').config({ path: './config/.env' })
 const express = require('express')
 const mongoose = require('mongoose')
 const moviesRouter = require('./api/routes/movies/movies') 
+const tvShowRouter = require('./api/routes/tvShows/tvShows')
 const authRouter = require('./api/routes/users/auth')
 const passport = require('passport')
 const session = require('express-session');
@@ -49,6 +50,7 @@ app.use(passport.session());
 
 //routes
 app.use('/browse', moviesRouter);
+app.use('/browse/tv/',tvShowRouter);
 app.use('/',authRouter)
 
 
